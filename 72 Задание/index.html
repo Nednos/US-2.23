@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Селектор абзацев внутри div</title>
+    <style>
+        div p {
+            color: blue;
+            font-weight: bold; 
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <p>
+        +++
+    </p>
+    <p>
+        +++
+    </p>
+</div>
+<div>
+    <p>
+        +++
+    </p>
+</div>
+
+<p>
+    ---
+</p>
+<p>
+    ---
+</p>
+
+<title>Селектор заголовков h2 внутри div</title>
+    <style>
+        div h2 {
+            color: green; 
+            font-weight: bold; 
+            font-size: 24px; 
+        }
+    </style>
+
+<div>
+    <h2>+++</h2>
+    <p>
+        ---
+    </p>
+    <p>
+        ---
+    </p>
+</div>
+<div>
+    <h2>+++</h2>
+    <p>
+        ---
+    </p>
+</div>
+
+<h2>---</h2>
+<p>
+    ---
+</p>
+
+<title>Селектор абзацев внутри блока</title>
+    <style>
+        #block p {
+            color: blue; 
+            font-weight: bold;
+            font-size: 20px; 
+        }
+    </style>
+</head>
+<body>
+
+<div id="block">
+    <h2>---</h2>
+    <p>
+        +++
+    </p>
+    <p>
+        +++
+    </p>
+</div>
+<div>
+    <h2>---</h2>
+    <p>
+        ---
+    </p>
+</div>
+
+<h2>---</h2>
+<p>
+    ---
+</p>
+
+<title>Селектор заголовков h2 внутри блока</title>
+<style>
+    #block h2 {
+        color: green;
+        font-weight: bold;
+        font-size: 24px;
+    }
+</style>
+</head>
+<body>
+
+<div id="block">
+<h2>+++</h2>
+<p>
+    ---
+</p>
+<p>
+    ---
+</p>
+
+<h2>+++</h2>
+<p>
+    ---
+</p>
+</div>
+<div>
+<h2>---</h2>
+<p>
+    ---
+</p>
+</div>
+
+<h2>---</h2>
+<p>
+---
+</p>
+
+<title>Селектор классов bbb</title>
+    <style>
+        .bbb {
+            color: blue; 
+            font-weight: bold;
+            font-size: 20px; 
+    </style>
+</head>
+<body>
+
+<div id="block">
+    <h2 class="bbb">+++</h2>
+    <p class="bbb">
+        +++
+    </p>
+    <p>
+        ---
+    </p>
+    
+    <h2 class="bbb">+++</h2>
+    <p>
+        ---
+    </p>
+</div>
+<div class="bbb">
+    +++
+</div>
+
+<h2>---</h2>
+<p class="bbb">
+    +++
+</p>
+
+<title>Селектор классов bbb внутри блока</title>
+    <style>
+        #block .bbb {
+            color: red; 
+            font-weight: bold;
+            font-size: 20px; 
+        }
+    </style>
+</head>
+<body>
+
+<div id="block">
+    <h2 class="bbb">+++</h2>
+    <p class="bbb">
+        +++
+    </p>
+    <p>
+        ---
+    </p>
+    
+    <h2 class="bbb">+++</h2>
+    <p>
+        ---
+    </p>
+</div>
+
+<div class="bbb">
+    ---
+</div>
+
+<h2>---</h2>
+<p class="bbb">
+    ---
+</p>
+
+<title>Селектор абзацев с классом bbb</title>
+    <style>
+        /* Селектор для абзацев с классом bbb */
+        p.bbb {
+            color: blue; /* Устанавливаем цвет текста для выбранных абзацев */
+            font-weight: bold; /* Делаем текст жирным */
+            font-size: 20px; /* Устанавливаем размер шрифта */
+        }
+    </style>
+</head>
+<body>
+
+<div id="block">
+    <h2 class="bbb">---</h2>
+    <p class="bbb">
+        +++
+    </p>
+    <p>
+        ---
+    </p>
+    
+    <h2 class="bbb">---</h2>
+    <p class="bbb">
+        +++
+    </p>
+</div>
+
+<div class="bbb">
+    ---
+</div>
+
+<h2>---</h2>
+<p class="bbb">
+    +++
+</p>
+
+<title>Селектор заголовков h2 с классом bbb</title>
+<style>
+    /* Селектор для заголовков h2 с классом bbb */
+    h2.bbb {
+        color: green; /* Устанавливаем цвет текста для выбранных заголовков */
+        font-weight: bold; /* Делаем текст жирным */
+        font-size: 24px; /* Устанавливаем размер шрифта */
+    }
+</style>
+</head>
+<bod>
+
+<div id="block">
+<h2 class="bbb">+++</h2>
+<p class="bbb">
+    ---
+</p>
+<p>
+    ---
+</p>
+
+<h2 class="bbb">+++</h2>
+<p class="bbb">
+    ---
+</p>
+</div>
+
+<h2>---</h2>
+<p class="bbb">
+---
+</p>
+
+<h2 class="bbb">+++</h2>
+<p class="bbb">
+---
+</p>
+
+<title>Селектор абзацев с классом bbb внутри блока</title>
+<style>
+    #block p.bbb {
+        color: blue; 
+        font-weight: bold;
+        font-size: 20px; 
+    }
+</style>
+</head>
+<body>
+
+<div id="block">
+<h2 class="bbb">---</h2>
+<p class="bbb">
+    +++
+</p>
+<p>
+    ---
+</p>
+
+<h2 class="bbb">---</h2>
+<p class="bbb">
+    +++
+</p>
+</div>
+
+<div class="bbb">
+---
+</div>
+
+<h2>---</h2>
+<p class="bbb">
+---
+</p>
+
+<title>Селектор для классов bbb и xxx</title>
+    <style>
+        /* Селектор для элементов с классами bbb и xxx */
+        .bbb, .xxx {
+            color: red; /* Устанавливаем цвет текста для выбранных элементов */
+            font-weight: bold; /* Делаем текст жирным */
+            font-size: 20px; /* Устанавливаем размер шрифта */
+        }
+    </style>
+</head>
+<>
+
+<h2 class="bbb">+++</h2>
+<p class="bbb">
+    +++
+</p>
+
+<h2 class="xxx">+++</h2>
+<p>
+    ---
+</p>
+
+<h2>---</h2>
+<p class="xxx">
+    +++
+</p>
+
+<div class="bbb">
+    +++
+</div>
+
+<title>Селектор для абзацев внутри блока</title>
+    <style>
+        #block p.bbb, #block p.xxx {
+            color: green; 
+            font-weight: bold;
+            font-size: 20px; 
+        }
+    </style>
+</head>
+<body>
+
+<div id="block">
+    <h2 class="bbb">---</h2>
+    <p class="bbb">
+        +++
+    </p>
+    
+    <h2 class="xxx">---</h2>
+    <p>
+        ---
+    </p>
+    
+    <h2>---</h2>
+    <p class="xxx">
+        +++
+    </p>
+    
+    <div class="bbb">
+        ---
+    </div>
+    <div class="xxx">
+        ---
+    </div>
+</div>
+
+<h2 class="bbb">---</h2>
+<p class="xxx">
+    ---
+</p>
+
+<title>Селектор для классов fff</title>
+    <style>
+        /* Селектор для элементов с классом fff */
+        .fff {
+            color: blue; /* Устанавливаем цвет текста для выбранных элементов */
+            font-weight: bold; /* Делаем текст жирным */
+            font-size: 20px; /* Устанавливаем размер шрифта */
+        }
+    </style>
+</head>
+<body>
+
+<div class="fff">
+    +++
+</div>
+
+<h2 class="fff">+++</h2>
+<p class="fff">
+    +++
+</p>
+
+<h2 class="bbb">---</h2>
+<p class="xxx">
+    ---
+</p>
+
+<title>Селектор абзацев внутри класса fff</title>
+    <style>
+        /* Селектор для абзацев внутри элемента с классом fff */
+        .fff p {
+            color: green; /* Устанавливаем цвет текста для выбранных абзацев */
+            font-weight: bold; /* Делаем текст жирным */
+            font-size: 20px; /* Устанавливаем размер шрифта */
+        }
+    </style>
+</head>
+<body>
+
+<div class="fff">
+    <h2>---</h2>
+    <p>
+        +++
+    </p>
+    <p>
+        +++
+    </p>
+</div>
+
+<h2 class="fff">---</h2>
+<p class="fff">
+    ---
+</p>
+
+<title>Селектор абзацев с классом fff</title>
+    <style>
+        /* Селектор для абзацев с классом fff */
+        p.fff {
+            color: blue; /* Устанавливаем цвет текста для выбранных абзацев */
+            font-weight: bold; /* Делаем текст жирным */
+            font-size: 20px; /* Устанавливаем размер шрифта */
+        }
+    </style>
+</head>
+<body>
+
+<div id="block">
+    <h2>---</h2>
+    <p>
+        ---
+    </p>
+    <p>
+        ---
+    </p>
+    <p class="fff">
+        +++
+    </p>
+</div>
+
+<h2 class="fff">---</h2>
+<p class="fff">
+    +++
+</p>
+
+<title>Селектор для элементов bbb внутри класса fff</title>
+    <style>
+        /* Селектор для элементов с классом bbb внутри элемента с классом fff */
+        .fff .bbb {
+            color: red; /* Устанавливаем цвет текста для выбранных элементов */
+            font-weight: bold; /* Делаем текст жирным */
+            font-size: 20px; /* Устанавливаем размер шрифта */
+        }
+    </style>
+</head>
+<bod>
+
+<div class="fff">
+    <h2 class="bbb">+++</h2>
+    <p>
+        ---
+    </p>
+    <p>
+        ---
+    </p>
+    <p class="bbb">
+        +++
+    </p>
+</div>
+
+<h2 class="fff">---</h2>
+<p class="bbb">
+    ---
+</p>
+
+<title>Селектор для заголовков h2 с классом bbb внутри класса fff</title>
+    <style>
+        /* Селектор для заголовков h2 с классом bbb внутри элемента с классом fff */
+        .fff h2.bbb {
+            /* color: green; /* Устанавливаем цвет текста для выбранных заголовков */
+            font-weight: bold; /* Делаем текст жирным */
+            font-size: 24px; /* Устанавливаем размер шрифта */
+        }
+    </style>
+</head>
+<body>
+
+<div class="fff">
+    <h2 class="bbb">+++</h2>
+    <p>
+        ---
+    </p>
+    
+    <h2 class="bbb">+++</h2>
+    <p>
+        ---
+    </p>
+    <p class="bbb">
+        ---
+    </p>
+</div>
+
+<h2 class="bbb">---</h2>
+<p class="bbb">
+    ---
+</p>
+<p class="fff">
+    ---
+</p>
+
+</body>
+</html>

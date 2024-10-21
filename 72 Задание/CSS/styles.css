@@ -1,0 +1,60 @@
+div p {    color: blue;
+    font-weight: bold; 
+    font-size: 20px;
+}
+div h2 {
+    color: green; 
+    font-weight: bold; 
+    font-size: 24px; 
+}
+#block p {
+    color: red;
+}
+#block h2 {
+    color: yellow;
+}
+.bbb {
+    color: blue;
+    font-weight: bold; 
+    font-size: 20px; 
+}
+#block .bbb {
+    color: pink;
+}
+p.bbb {
+    color: orange;
+}
+h2.bbb {
+    color: brown;
+}
+#block p.bbb {
+    color: purple;
+}
+.bbb, .xxx {
+    color: red;
+    font-weight: bold; 
+    font-size: 20px;
+}
+.p.bbb, h2.xxx {
+    color: black;
+}
+#block p.bbb, #block p.xxx {
+    color: silver;
+}
+.fff {
+    color: cyan;
+}
+.fff p {
+    color: magenta;
+}
+p.fff {
+    color: white;
+}
+.fff .bbb {
+    color: green;
+}
+.fff h2.bbb {
+    color: gray;
+    font-weight: bold;
+    font-size: 24px;
+}
